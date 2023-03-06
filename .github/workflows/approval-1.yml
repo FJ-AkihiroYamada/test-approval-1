@@ -25,3 +25,5 @@ jobs:
     needs: checkout
     environment: test_approve_1
     runs-on: ubuntu-latest
+    steps:
+      - run: echo "Success!"
