@@ -23,6 +23,5 @@ jobs:
   approve: 
     name: "Request approval"
     needs: checkout
-    environment: 
-      name: test_approve_1
+    environment: test_approve_1
     runs-on: ubuntu-latest
