@@ -20,10 +20,10 @@ jobs:
         continue-on-error: true
       - name: Show info
         run: ls
-  approve: 
-    name: "Request approval"
-    needs: checkout
-    if: always
-    environment: 
-      name: test_approve_1
-    runs-on: ubuntu-latest
+  # approve: 
+  #   name: "Request approval"
+  #   needs: checkout
+  #   if: always
+  #   environment: 
+  #     name: test_approve_1
+  #   runs-on: ubuntu-latest
