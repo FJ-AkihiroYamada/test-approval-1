@@ -26,4 +26,11 @@ jobs:
     environment: test_approve_1
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Success!"
+      - name: workflow dispatch
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: approval-2.yml
+          repo: FJ-AkihiroYamada/test-approval-2
+          ref: main
+          token: ${{ secrets.MY_PAT }}
+          inputs: '{ "greeting": "hello" }'
